@@ -27,7 +27,7 @@ export class UsersComponent implements OnInit {
   }
   SubmitForm(){
     var type= this.uId == undefined ? "Add" : "Update";
-    if(this.userForm.Name==undefined || this.userForm.Email==undefined || this.userForm.Mobile==undefined || this.userForm.Age==undefined){
+    if(this.userForm.value.Name==undefined || this.userForm.value.Email==undefined || this.userForm.value.Mobile==undefined || this.userForm.value.Age==undefined){
       alert("Please fill all the fields");
       return;
     }
